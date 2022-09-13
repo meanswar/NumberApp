@@ -13,4 +13,27 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Button">
+        <item name="android:background">@drawable/bg_purple_corner_radius_5</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center</item>/
+        <item name="android:padding">@dimen/size_dp_5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextColor">
+        <item name="android:textColor">@color/txt_color</item>
+    </style>
+
+    <style name="TextTitle" parent="TextColor">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_sp_28</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text" parent="TextColor">
+        <item name="android:textSize">@dimen/text_sp_20</item>
+        <item name="android:textStyle">italic</item>
+    </style>
 </resources>

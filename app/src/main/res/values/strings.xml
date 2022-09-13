@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NumberApp</string>
+    <string name="fact_title">Do you want to know a fact about Number?</string>
+    <string name="input_number_hint">put the number here</string>
+    <string name="get_fact_btn_title">Get Fact</string>
+    <string name="get_random_fact_btn_title">Get Random Fact</string>
+    <string name="activity_fact_details_title">In fact</string>
 </resources>

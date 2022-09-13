@@ -10,6 +10,7 @@ import com.nikitosii.core.database.entity.NumberFact
 import com.nikitosii.databinding.ActivityFactDetailsBinding
 import com.nikitosii.flow.base.BaseActivity
 import com.nikitosii.util.annotation.RequiresViewModel
+import com.nikitosii.util.ext.onClick
 
 @RequiresViewModel(FactDetailsViewModel::class)
 class FactDetailsActivity :
@@ -17,9 +18,15 @@ class FactDetailsActivity :
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initViews()
+    }
 
-        val fact = Gson().fromJson(intent.getStringExtra(FACT_INTENT), NumberFact::class.java)
-        binding.fact = fact
+    private fun initViews() {
+        with (binding) {
+            val fact = Gson().fromJson(intent.getStringExtra(FACT_INTENT), NumberFact::class.java)
+            this.fact = fact
+            btnBack.onClick { onBackPressed() }
+        }
     }
 
     companion object {

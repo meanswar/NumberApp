@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="@dimen/size_dp_10"
+            android:foreground="?attr/selectableItemBackground"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -52,7 +53,8 @@
                     android:layout_width="@dimen/size_dp_0"
                     android:layout_height="match_parent"
                     android:layout_weight="10"
-                    android:background="@color/number_fact_background"
+                    android:background="@color/number_fact_background"                    android:clipToOutline="true"
+                    android:ellipsize="end"
                     android:lines="1"
                     android:text="@{fact.text}"
                     android:paddingHorizontal="@dimen/size_dp_10"
